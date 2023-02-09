@@ -1,12 +1,134 @@
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+html {
+	box-sizing: border-box;
+}
 
-*/
+body {
+	background-color: grey;
+    font-family: fantasy ;
+}
+
+#juguemos{
+	background-color: black;
+    align-items: center
+}
+
+.game {
+	height: 60vh;
+	width: 60vh;
+	display: grid;
+	grid-template-columns: 20vh 20vh 20vh;
+	grid-template-rows: 20vh 20vh 20vh;
+}
+
+.topLeft {
+	border-width: 2px;
+	border-style: solid;
+	border-left: none;
+	border-top: none;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.topCenter {
+	border-width: 2px;
+	border-style: solid;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.topRight {
+	border-width: 2px;
+	border-style: solid;
+	border-right: none;
+	border-top: none;
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.middleLeft {
+	border-width: 2px;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.middleCenter {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.middleRight {
+	border-width: 2px;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.bottomLeft {
+	border-width: 2px;
+	border-style: solid;
+	border-left: none;
+	border-bottom: none;
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+.bottomCenter {
+	border-width: 2px;
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.bottomRight {
+	border-width: 2px;
+	border-style: solid;
+	border-right: none;
+	border-bottom: none;
+	z-index: 0;
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+.marcado {
+	display: inline;
+	font-size: 10vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.fin {
+	grid-column: 1/4;
+	grid-row: 1/4;
+	z-index: 8;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(4.5px);
+	-webkit-backdrop-filter: blur(4.5px);
+	border-radius: 10px;
+}
+
+.inicio {
+	grid-column: 1/4;
+	grid-row: 1/4;
+	z-index: 8;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(4.5px);
+	-webkit-backdrop-filter: blur(4.5px);
+	border-radius: 10px;
+}
